@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mintablelite-dev-22738-authRole",
+      "UnauthRoleArn": "arn:aws:iam::496294535212:role/amplify-mintablelite-dev-22738-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::496294535212:role/amplify-mintablelite-dev-22738-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-mintablelite-dev-22738-deployment",
+      "UnauthRoleName": "amplify-mintablelite-dev-22738-unauthRole",
+      "StackName": "amplify-mintablelite-dev-22738",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:496294535212:stack/amplify-mintablelite-dev-22738/38c47960-48c9-11ed-9894-0a394bac3a1e",
+      "AmplifyAppId": "d2tusj2loiswpv"
+    },
+    "categories": {
+      "auth": {
+        "mintableliteb3ed267a": {}
+      }
+    }
+  }
+}
