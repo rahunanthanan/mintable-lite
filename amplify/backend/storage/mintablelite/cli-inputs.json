@@ -1,0 +1,14 @@
+{
+  "resourceName": "mintablelite",
+  "tableName": "mintable-lite",
+  "partitionKey": {
+    "fieldName": "pk",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "sk",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

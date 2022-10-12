@@ -1,7 +1,7 @@
 import React from "react";
 
-import type { Auth } from "../schema/Auth";
-import type { SignInValues } from "../schema/SignInValues"
+import type { Auth } from "../types/Auth";
+import type { SignInValues } from "../types/SignInValues"
 
 interface Props {
     children : React.ReactElement

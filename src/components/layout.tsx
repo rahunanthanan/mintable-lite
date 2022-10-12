@@ -1,8 +1,8 @@
-import Navbar from './navbar'
-import Footer from './footer'
+import Navbar from "./navbar";
+import Footer from "./footer";
 
-interface Props{
-    children: React.ReactElement
+interface Props {
+  children: React.ReactElement;
 }
 
 function Layout({ children }: Props) {
@@ -12,7 +12,7 @@ function Layout({ children }: Props) {
       <main>{children}</main>
       <Footer />
     </>
-  )
+  );
 }
 
-export default Layout
+export default Layout;
