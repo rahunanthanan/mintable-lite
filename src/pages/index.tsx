@@ -21,7 +21,7 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
 
 export default function Index({ nfts }: Props) {
   return (
-    <main>
+    <>
       <div className="relative overflow-hidden">
         <div className="absolute w-full h-full top-0 left-0 flex -z-10">
           <div className="relative w-full">
@@ -36,15 +36,15 @@ export default function Index({ nfts }: Props) {
         </div>
         <div className="w-full h-full top-0 py-10 z-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20">
-            <div className="flex">
+            <div className="flex flex-col sm:flex-row gap-6 sm:gap-0">
               <div className="flex-1 flex flex-col justify-center text-white">
-                <div className="text-2xl">
+                <div className="text-xl sm:text-2xl">
                   Completely free to mint your first NFT
                 </div>
-                <h1 className="text-4xl font-bold mt-1">
+                <h1 className="text-2xl sm:text-4xl font-bold mt-1">
                   Turn any creation info an item on the blockchain
                 </h1>
-                <div className="mt-3 text-xl">
+                <div className="mt-3 sm:text-xl">
                   Trade digital items on Mintable to easily earn crypto
                 </div>
                 <div className="flex gap-3 mt-6">
@@ -60,23 +60,25 @@ export default function Index({ nfts }: Props) {
                   </Link>
                 </div>
               </div>
-              <div className="rounded shadow-md overflow-hidden bg-white">
-                <Image src="/future-skyline.png" width={320} height={300} />
-                <div className="flex justify-between px-3 py-3">
-                  <div className="flex items-center gap-2">
-                    <div className="rounded-full w-8 h-8 overflow-hidden">
-                      <Image
-                        unoptimized
-                        width={35}
-                        height={35}
-                        src="https://avatars.dicebear.com/api/male/john.svg?background=%232C0346"
-                      />
+              <div className="hidden sm:flex">
+                <div className="rounded shadow-md overflow-hidden bg-white">
+                  <Image src="/future-skyline.png" width={320} height={300} />
+                  <div className="flex justify-between px-3 py-3">
+                    <div className="flex items-center gap-2">
+                      <div className="rounded-full w-8 h-8 overflow-hidden">
+                        <Image
+                          unoptimized
+                          width={35}
+                          height={35}
+                          src="https://avatars.dicebear.com/api/male/john.svg?background=%232C0346"
+                        />
+                      </div>
+                      <div>Stylewish</div>
                     </div>
-                    <div>Stylewish</div>
-                  </div>
-                  <div>
-                    <div>Future Skyline</div>
-                    <div>$340 (Ξ0.1)</div>
+                    <div>
+                      <div>Future Skyline</div>
+                      <div>$340 (Ξ0.1)</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -85,7 +87,7 @@ export default function Index({ nfts }: Props) {
         </div>
       </div>
 
-      <div className="py-10">
+      <div className="sm:py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center mt-12">
             <Link href="/">
@@ -118,7 +120,7 @@ export default function Index({ nfts }: Props) {
             <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
               Promoted Creations
             </h2>
-            <div className="mt-6 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+            <div className="mt-6 max-w-lg mx-auto grid gap-5 lg:grid-cols-4 lg:max-w-none">
               {nfts.map((nft) => (
                 <NFTCard key={nft.id} nft={nft} />
               ))}
@@ -129,7 +131,7 @@ export default function Index({ nfts }: Props) {
             <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
               Trending NFTs
             </h2>
-            <div className="mt-6 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+            <div className="mt-6 max-w-lg mx-auto grid gap-5 lg:grid-cols-4 lg:max-w-none">
               {nfts.map((nft) => (
                 <NFTCard key={nft.id} nft={nft} />
               ))}
@@ -140,7 +142,7 @@ export default function Index({ nfts }: Props) {
             <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
               Recently Sold
             </h2>
-            <div className="mt-6 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+            <div className="mt-6 max-w-lg mx-auto grid gap-5 lg:grid-cols-4 lg:max-w-none">
               {nfts.map((nft) => (
                 <NFTCard key={nft.id} nft={nft} />
               ))}
@@ -148,6 +150,6 @@ export default function Index({ nfts }: Props) {
           </div>
         </div>
       </div>
-    </main>
+    </>
   );
 }

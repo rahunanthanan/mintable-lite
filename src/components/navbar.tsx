@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import classNames from "classnames";
 import { useAuthenticator } from "@aws-amplify/ui-react";
@@ -27,7 +28,10 @@ const navigations = [
 ];
 
 const Navbar = () => {
-  const { user, signOut } = useAuthenticator((context) => [context.isPending, context.user]);
+  const { user, signOut } = useAuthenticator((context) => [
+    context.isPending,
+    context.user,
+  ]);
   const router = useRouter();
 
   const onSignout = React.useCallback(async () => {
@@ -43,20 +47,25 @@ const Navbar = () => {
             <div className="flex items-center justify-between h-16">
               <div className="flex items-center flex-1">
                 <div className="flex-shrink-0">
-                  <img
-                    className="block lg:hidden h-8 w-auto"
-                    src="/mintable-lite-logo.svg"
-                    alt="Mintable"
-                  />
-                  <img
-                    className="hidden lg:block h-8 w-auto"
-                    src="/mintable-lite-logo.svg"
-                    alt="Mintable"
-                  />
+                  <div className="block lg:hidden h-8 w-auto">
+                    <Image
+                      width={35}
+                      height={35}
+                      src="/mintable-lite-logo.svg"
+                      alt="Mintable"
+                    />
+                  </div>
+                  <div className="hidden lg:block h-8 w-auto">
+                    <Image
+                      width={35}
+                      height={35}
+                      src="/mintable-lite-logo.svg"
+                      alt="Mintable"
+                    />
+                  </div>
                 </div>
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
-                    {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
                     <Link href="/">
                       <a className="px-3 py-2 rounded-md text-sm font-medium">
                         All Categories
@@ -154,7 +163,7 @@ const Navbar = () => {
                     <div className="flex gap-3">
                       <button
                         type="button"
-                        onClick={() => router.push('/mint')}
+                        onClick={() => router.push("/mint")}
                         className="px-3 py-2 rounded-md text-sm font-medium uppercase"
                       >
                         Sign In
@@ -162,7 +171,7 @@ const Navbar = () => {
 
                       <button
                         type="button"
-                        onClick={() => router.push('/mint')}
+                        onClick={() => router.push("/mint")}
                         className="px-3 py-2 rounded-md text-sm font-medium uppercase bg-primary text-white"
                       >
                         Sign Up

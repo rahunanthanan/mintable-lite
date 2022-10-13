@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root,
+  [data-amplify-theme] {
+    --amplify-colors-font-primary: #2c0346;
+    --amplify-colors-brand-primary-80: #2c0346;
+    --amplify-colors-font-secondary: var(--amplify-colors-neutral-60);
+  }
+}

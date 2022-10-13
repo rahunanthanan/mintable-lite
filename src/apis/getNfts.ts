@@ -2,44 +2,50 @@ export function getNfts() {
   return Promise.resolve([
     {
       id: "ee7e93f4-012b-42b3-ac1f-d283905f3249",
-      name: "Boost your conversion rate",
+      name: "Dragon Rider on Lava Planet",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
-      image:
-        "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
+      price: "$4764 (Ξ2.1)",
+      image: "/nft-001.png",
       user: {
-        name: "Brenna Goyette",
-        href: "#",
-        image:
-          "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        id: "ee7e93f4",
+        name: "Exit Man",
       },
     },
     {
       id: "ee7e93f4-012b-42b3-ac1f-d283905f3248",
-      name: "Boost your conversion rate",
+      name: "Dragon Rider on Lava Planet",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
-      image:
-        "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
+      image: "/nft-002.png",
+      price: "$4764 (Ξ2.1)",
       user: {
-        name: "Brenna Goyette",
-        href: "#",
-        image:
-          "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        id: "012b",
+        name: "CindyAvelino",
       },
     },
     {
       id: "ee7e93f4-012b-42b3-ac1f-d283905f3247",
-      name: "Boost your conversion rate",
+      name: "Dragon Rider on Lava Planet",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
-      image:
-        "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
+      image: "/nft-003.png",
+      price: "$4764 (Ξ2.1)",
       user: {
-        name: "Brenna Goyette",
-        href: "#",
-        image:
-          "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        id: "42b3",
+        name: "MatWat",
+      },
+    },
+    {
+      id: "ee7e93f4-012b-42b3-ac1f-d283905f3246",
+      name: "Dragon Rider on Lava Planet",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
+      image: "/nft-004.png",
+      price: "$4764 (Ξ2.1)",
+      user: {
+        id: "42b3",
+        name: "ElenGris",
       },
     },
   ]);
