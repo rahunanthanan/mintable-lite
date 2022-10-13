@@ -2,6 +2,7 @@ import { GetServerSidePropsContext } from "next";
 import React from "react";
 import NFTCard from "../../components/nftcard";
 import { NFT } from "../../types/NFT";
+import { findNft } from "../../apis/findNft";
 
 interface Props {
   nft: NFT;
@@ -10,22 +11,23 @@ interface Props {
 export async function getServerSideProps(context: GetServerSidePropsContext) {
   const nftId = context.params?.id;
 
+  let nft;
+  if (typeof nftId === "string") {
+    nft = await findNft(nftId);
+  }
+
+  if (!nft) {
+    return {
+      redirect: {
+        destination: "/",
+        permanent: false,
+      },
+    };
+  }
+
   return {
     props: {
-      nft: {
-        id: "ee7e93f4-012b-42b3-ac1f-d283905f3249",
-        name: "Boost your conversion rate",
-        description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
-        image:
-          "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
-        user: {
-          name: "Brenna Goyette",
-          href: "#",
-          image:
-            "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        },
-      },
+      nft,
     },
   };
 }
