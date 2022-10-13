@@ -1,26 +1,34 @@
 {
-    "dev": {
-        "awscloudformation": {
-            "AuthRoleName": "amplify-mintablelite-dev-22738-authRole",
-            "UnauthRoleArn": "arn:aws:iam::496294535212:role/amplify-mintablelite-dev-22738-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::496294535212:role/amplify-mintablelite-dev-22738-authRole",
-            "Region": "ap-southeast-1",
-            "DeploymentBucketName": "amplify-mintablelite-dev-22738-deployment",
-            "UnauthRoleName": "amplify-mintablelite-dev-22738-unauthRole",
-            "StackName": "amplify-mintablelite-dev-22738",
-            "StackId": "arn:aws:cloudformation:ap-southeast-1:496294535212:stack/amplify-mintablelite-dev-22738/38c47960-48c9-11ed-9894-0a394bac3a1e",
-            "AmplifyAppId": "d2tusj2loiswpv"
-        },
-        "categories": {
-            "auth": {
-                "mintablelite": {}
-            },
-            "hosting": {
-                "amplifyhosting": {
-                    "appId": "d2tusj2loiswpv",
-                    "type": "cicd"
-                }
-            }
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mintablelite-dev-22738-authRole",
+      "UnauthRoleArn": "arn:aws:iam::496294535212:role/amplify-mintablelite-dev-22738-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::496294535212:role/amplify-mintablelite-dev-22738-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-mintablelite-dev-22738-deployment",
+      "UnauthRoleName": "amplify-mintablelite-dev-22738-unauthRole",
+      "StackName": "amplify-mintablelite-dev-22738",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:496294535212:stack/amplify-mintablelite-dev-22738/38c47960-48c9-11ed-9894-0a394bac3a1e",
+      "AmplifyAppId": "d2tusj2loiswpv",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-mintablelite-dev-22738-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "auth": {
+        "mintablelite": {},
+        "true": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d2tusj2loiswpv",
+          "type": "cicd"
         }
+      },
+      "function": {
+        "mintablelitenfts": {
+          "deploymentBucketName": "amplify-mintablelite-dev-22738-deployment",
+          "s3Key": "amplify-builds/mintablelitenfts-6c6a3548774139615434-build.zip"
+        }
+      }
     }
+  }
 }

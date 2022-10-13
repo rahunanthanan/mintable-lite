@@ -1,6 +1,6 @@
 {
   "resourceName": "mintablelite",
-  "tableName": "mintable-lite",
+  "tableName": "mintablelite",
   "partitionKey": {
     "fieldName": "pk",
     "fieldType": "string"

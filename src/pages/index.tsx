@@ -1,20 +1,22 @@
 import React from "react";
 import { GetServerSidePropsContext } from "next";
+import { API } from "@aws-amplify/api";
 import Link from "next/link";
 import Image from "next/image";
 
 import NFTCard from "../components/nftcard";
 import { NFT } from "../types/NFT";
-import { getNfts } from "../apis/getNfts";
 
 interface Props {
   nfts: NFT[];
 }
 
 export async function getServerSideProps(context: GetServerSidePropsContext) {
+  const nfts = await API.get("mintablelite", "/nfts", {});
+
   return {
     props: {
-      nfts: await getNfts(),
+      nfts,
     },
   };
 }

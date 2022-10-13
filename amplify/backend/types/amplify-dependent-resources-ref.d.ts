@@ -1,6 +1,8 @@
 export type AmplifyDependentResourcesAttributes = {
     "auth": {
         "mintablelite": {
+            "IdentityPoolId": "string",
+            "IdentityPoolName": "string",
             "UserPoolId": "string",
             "UserPoolArn": "string",
             "UserPoolName": "string",
@@ -18,6 +20,21 @@ export type AmplifyDependentResourcesAttributes = {
             "SortKeyName": "string",
             "SortKeyType": "string",
             "Region": "string"
+        }
+    },
+    "function": {
+        "mintablelitenfts": {
+            "Name": "string",
+            "Arn": "string",
+            "Region": "string",
+            "LambdaExecutionRole": "string"
+        }
+    },
+    "api": {
+        "mintablelite": {
+            "RootUrl": "string",
+            "ApiName": "string",
+            "ApiId": "string"
         }
     }
 }

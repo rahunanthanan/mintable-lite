@@ -1,10 +1,9 @@
 import { GetServerSidePropsContext } from "next";
 import Image from "next/image";
+import { API } from "@aws-amplify/api";
 import React from "react";
 import NFTCard from "../../components/nftcard";
 import { NFT } from "../../types/NFT";
-import { findNft } from "../../apis/findNft";
-import { getNfts } from "../../apis/getNfts";
 
 interface Props {
   nft: NFT;
@@ -13,10 +12,11 @@ interface Props {
 
 export async function getServerSideProps(context: GetServerSidePropsContext) {
   const nftId = context.params?.id;
+  const nfts = await API.get("mintablelite", "/nfts", {});
 
   let nft;
   if (typeof nftId === "string") {
-    nft = await findNft(nftId);
+    nft = await API.get("mintablelite", `/nfts/${nftId}`, {});
   }
 
   if (!nft) {
@@ -31,7 +31,7 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
   return {
     props: {
       nft,
-      nfts: await getNfts(),
+      nfts,
     },
   };
 }
