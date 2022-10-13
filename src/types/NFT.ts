@@ -1,7 +1,7 @@
 import { User } from "./User";
 
 export interface NFT {
-  id: string;
+  nft_id: string;
   name: string;
   description: string;
   image: string;

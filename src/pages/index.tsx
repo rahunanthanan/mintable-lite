@@ -124,7 +124,7 @@ export default function Index({ nfts }: Props) {
             </h2>
             <div className="mt-6 max-w-lg mx-auto grid gap-5 lg:grid-cols-4 lg:max-w-none">
               {nfts.map((nft) => (
-                <NFTCard key={nft.id} nft={nft} />
+                <NFTCard key={nft.nft_id} nft={nft} />
               ))}
             </div>
           </div>
@@ -135,7 +135,7 @@ export default function Index({ nfts }: Props) {
             </h2>
             <div className="mt-6 max-w-lg mx-auto grid gap-5 lg:grid-cols-4 lg:max-w-none">
               {nfts.map((nft) => (
-                <NFTCard key={nft.id} nft={nft} />
+                <NFTCard key={nft.nft_id} nft={nft} />
               ))}
             </div>
           </div>
@@ -146,7 +146,7 @@ export default function Index({ nfts }: Props) {
             </h2>
             <div className="mt-6 max-w-lg mx-auto grid gap-5 lg:grid-cols-4 lg:max-w-none">
               {nfts.map((nft) => (
-                <NFTCard key={nft.id} nft={nft} />
+                <NFTCard key={nft.nft_id} nft={nft} />
               ))}
             </div>
           </div>

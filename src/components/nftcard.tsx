@@ -8,7 +8,7 @@ interface Props {
 
 const NFTCard = ({ nft }: Props) => {
   return (
-    <Link href={`/nfts/${nft.id}`}>
+    <Link href={`/nfts/${nft.nft_id}`}>
       <a className="flex flex-col rounded-lg shadow-lg overflow-hidden">
         <div className="flex-shrink-0 min-h-[320px] relative">
           <Image
