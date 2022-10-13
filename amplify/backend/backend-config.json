@@ -1,6 +1,6 @@
 {
   "auth": {
-    "mintableliteb3ed267a": {
+    "mintablelite": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
@@ -31,6 +31,13 @@
     "mintablelite": {
       "service": "DynamoDB",
       "providerPlugin": "awscloudformation"
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "service": "amplifyhosting",
+      "type": "cicd",
+      "lastPushTimeStamp": "2022-10-13T06:35:47.285Z"
     }
   }
 }
