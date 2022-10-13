@@ -1,8 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## MintableLite
+MintableLite is a marketplace where users can mint, list and sell their NFTs. Every NFT has
+name, description, image / animation attributes. Users must sign in to mint, sell or buy an
+item. The app have two pages, a landing page for listing already minted NFTs fetched
+from an endpoint and a details page for viewing full details of an item which comes from
+another API endpoint.
+
+
+This project is mainly created by using [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), [Tailwindcss](https://tailwindcss.com/docs/installation) for frontend development and [AWS-Amplify] (https://docs.amplify.aws/cli/), [NodeJS] , [Express] for backend and API development
+
+
+## System Requirements
+For run this application, system needs to support following versions
+"next": "12.3.1",
+"react": "18.2.0",
+
+
+## Deployment & Hosting
+This Application has been deployed and hosted in domain :  https://mintablelite.rahu.me/ 
+
 
 ## Getting Started
 
-First, run the development server:
+First, run the development server :
 
 ```bash
 npm run dev
@@ -27,8 +46,4 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
