@@ -1,5 +1,6 @@
 import { GetServerSidePropsContext } from "next";
 import Image from "next/image";
+import Head from 'next/head';
 import { API } from "@aws-amplify/api";
 import React from "react";
 import NFTCard from "../../components/nftcard";
@@ -38,6 +39,13 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
 
 export default function NFTDetails({ nft, nfts }: Props) {
   return (
+    <>
+    <div>
+    <Head>
+        <title>{nft.name}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+    </div>
     <div className="py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex gap-3">
@@ -92,5 +100,8 @@ export default function NFTDetails({ nft, nfts }: Props) {
         </div>
       </div>
     </div>
+    </>
+    
+    
   );
 }
