@@ -35,9 +35,9 @@ To Mint an item, you need to sign up and sign into this application.
     - Authentication has been implemented using Amplify Auth
     (https://docs.amplify.aws/lib/auth/getting-started/q/platform/js/)
 
-[https://github.com/rahunanthanan/mintable-lite/blob/main/screenshots/Create%20Account.png]
+![alt text](https://github.com/rahunanthanan/mintable-lite/blob/main/screenshots/Create%20Account.png)
 
-[https://github.com/rahunanthanan/mintable-lite/blob/main/screenshots/Sign%20in.png]
+![alt text](https://github.com/rahunanthanan/mintable-lite/blob/main/screenshots/Sign%20in.png)
 
 
 
