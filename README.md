@@ -6,7 +6,7 @@ from an endpoint and a details page for viewing full details of an item which co
 another API endpoint.
 
 
-This project is mainly created by using [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), [Tailwindcss](https://tailwindcss.com/docs/installation) for frontend development and [AWS-Amplify] (https://docs.amplify.aws/cli/), [NodeJS] , [Express] for backend and API development
+This project is mainly created by using [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), [Tailwindcss](https://tailwindcss.com/docs/installation) for frontend development and [AWS-Amplify] (https://docs.amplify.aws/cli/), [Node.js] , [Express] for backend and API development
 
 
 ## System Requirements
@@ -28,6 +28,31 @@ npm run dev
 # or
 yarn dev
 ```
+
+## Create Account and Login
+
+To Mint an item, you need to sign up and sign into this application.
+    - Authentication has been implemented using Amplify Auth
+    (https://docs.amplify.aws/lib/auth/getting-started/q/platform/js/)
+
+## Storage
+
+Used NOSQL Database - DynamoDB  for storage
+
+
+## Endpoints 
+The app have three endpoints to list all minted items, mint an item and
+get details of an item.
+
+To create endpoints, AWS serverless express was used with API gateway
+
+
+
+## TO DO
+Frontend - Mint Page needs to be implemented
+Backend - Endpoints needs to protected
+
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
