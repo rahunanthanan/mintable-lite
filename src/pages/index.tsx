@@ -2,7 +2,7 @@ import React from "react";
 import { GetServerSidePropsContext } from "next";
 import { API } from "@aws-amplify/api";
 import Link from "next/link";
-import Head from 'next/head';
+import Head from "next/head";
 import Image from "next/image";
 
 import NFTCard from "../components/nftcard";
@@ -25,14 +25,10 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
 export default function Index({ nfts }: Props) {
   return (
     <>
-      <div>
       <Head>
         <title>Mintable Lite</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      </div>
-      
       <div className="relative overflow-hidden">
         <div className="absolute w-full h-full top-0 left-0 flex -z-10">
           <div className="relative w-full">

@@ -46,6 +46,19 @@ get details of an item.
 
 To create endpoints, AWS serverless express was used with API gateway
 
+List API : GET
+    https://uc0zhs235j.execute-api.ap-southeast-1.amazonaws.com/dev/nfts
+
+Mint API : POST
+    https://uc0zhs235j.execute-api.ap-southeast-1.amazonaws.com/dev/nfts
+
+   Parameters :  pk, sk, nft_id, name, description, image, animation, user : {name, id}
+
+Details API - GET
+    https://uc0zhs235j.execute-api.ap-southeast-1.amazonaws.com/dev/nfts/{nft_id}
+    Request Parameters : id
+
+Postman collection is included in codebase, Refer Mintable Lite.postman_collection.json
 
 
 ## TO DO

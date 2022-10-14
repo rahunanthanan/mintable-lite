@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "a3e5a4af-77cd-478e-86c4-d7c49b508483",
+		"name": "Mintable Lite",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "484974"
+	},
+	"item": [
+		{
+			"name": "List NFTs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://uc0zhs235j.execute-api.ap-southeast-1.amazonaws.com/dev/nfts",
+					"protocol": "https",
+					"host": [
+						"uc0zhs235j",
+						"execute-api",
+						"ap-southeast-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"nfts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mint NFT",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"pk\": \"nfts\",\n    \"sk\": \"ee7e93f4-012b-42b3-ac1f-d283905f3248\",\n    \"nft_id\": \"ee7e93f4-012b-42b3-ac1f-d283905f3248\",\n    \"name\": \"Dragon Rider on Lava Planet\",\n    \"description\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.\",\n    \"image\": \"https://mintablelite.rahu.me/_next/image?url=%2Fnft-001png&w=3840&q=100\",\n    \"animation\": \"\",\n    \"user\": {\n        \"id\": \"d283905f3248\",\n        \"name\": \"MatWat\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uc0zhs235j.execute-api.ap-southeast-1.amazonaws.com/dev/nfts",
+					"protocol": "https",
+					"host": [
+						"uc0zhs235j",
+						"execute-api",
+						"ap-southeast-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"nfts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update NFT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"pk\": \"nfts\",\n    \"sk\": \"ee7e93f4-012b-42b3-ac1f-d283905f3248\",\n    \"nft_id\": \"ee7e93f4-012b-42b3-ac1f-d283905f3248\",\n    \"image\": \"https://mintablelite.rahu.me/_next/image?url=%2Fnft-001.png&w=3840&q=100\",\n    \"animation\": \"\",\n    \"user\": {\n        \"name\": \"MatWat\",\n        \"id\": \"d283905f3248\"\n    },\n    \"description\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.\",\n    \"name\": \"Dragon Rider on Lava Planet\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://uc0zhs235j.execute-api.ap-southeast-1.amazonaws.com/dev/nfts/ee7e93f4-012b-42b3-ac1f-d283905f3248",
+					"protocol": "https",
+					"host": [
+						"uc0zhs235j",
+						"execute-api",
+						"ap-southeast-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"nfts",
+						"ee7e93f4-012b-42b3-ac1f-d283905f3248"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete NFT",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://uc0zhs235j.execute-api.ap-southeast-1.amazonaws.com/dev/nfts/ee7e93f4-012b-42b3-ac1f-d283905f3249",
+					"protocol": "https",
+					"host": [
+						"uc0zhs235j",
+						"execute-api",
+						"ap-southeast-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"nfts",
+						"ee7e93f4-012b-42b3-ac1f-d283905f3249"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
