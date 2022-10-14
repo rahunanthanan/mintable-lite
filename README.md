@@ -29,6 +29,13 @@ npm run dev
 yarn dev
 ```
 
+## List all NFTs
+![alt text](https://github.com/rahunanthanan/mintable-lite/blob/1fcc8a59d8db9a6a71d715b1df18ad7c2117b80e/screenshots/List%20All%20NFTs.png)
+
+## NFT Details Page
+![alt text](https://github.com/rahunanthanan/mintable-lite/blob/1fcc8a59d8db9a6a71d715b1df18ad7c2117b80e/screenshots/NFT%20details.png)
+
+
 ## Create Account and Login
 
 To Mint an item, you need to sign up and sign into this application.
